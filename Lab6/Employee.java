@@ -1,23 +1,23 @@
 import java.util.Scanner;
+	public class Employee {
+		public void information() {
 
-public class Employee {
-    // Initializing variables
-    private String firstName;
-    private String lastName;
-    private int age;
-    private double salary;
 
-    public Employee() {
-        // Get user input
-        Scanner scan = new Scanner(System.in);
+	Scanner scan = new Scanner(System.in);
+	System.out.println("Please input employee first name: ");
+	String firstN = scan.nextLine();
 
-        /**
-         * Continue code here to ask for the first name, last name, age, and salary, IN THAT ORDER
-         */
+	System.out.println("Please input employee last name: ");
+	String lastN = scan.nextLine();
 
-    }
+	System.out.println("Please input employee age: ");
+	int age = scan.nextInt();
 
-    public String toString() {
-        // insert logic for toString method
-    }
+
+	System.out.println("Please input employee salary: ");
+	double salary = scan.nextDouble();
+
+	System.out.println("Employee information: "+ firstN  + ", " + lastN + ", " + age + ", " + salary);
+
+	}
 }
